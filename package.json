@@ -1,7 +1,7 @@
 {
   "name": "botanistes-vire-normandie",
   "version": "1.0.0",
-  "description": "Interactifs Botanistes sur Musée Vire NOrmandie",
+  "description": "Interactifs Botanistes sur Musée Vire Normandie",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

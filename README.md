@@ -6,30 +6,17 @@ Interactifs Botanistes sur Musée Vire Normandie
 2. Initier un projet Electron : 
     npm init -y
     npm i --save-dev electron
-<<<<<<< HEAD
 3. Ignorer le répertoire "node_modules" dans .gitignore
 
 # modif dans la config
+fonction start dans les scripts : 
+    "start": "electron ."
 
-"scripts": {
-        "start": "electron ."
-    }
+Appel du bon fichier main
+    "main": "main.js",
 
-     "main": "main.js",
-
-# install de electron forge pour généreer les apps
-
+# installation de electron forge pour généreer les apps
 npx @electron-forge/cli import
 
-# généraion de l'app
+# génération de l'app
 npm run make
-=======
-3. Ingnorer le répertoire "node_modules" dans .gitignore
-
-# Paramétrage package .json
- "scripts": {
-    "start": "electron ."
-  },
-
-"main": "main.js",
->>>>>>> main

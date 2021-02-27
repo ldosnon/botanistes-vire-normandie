@@ -2,16 +2,16 @@
   "name": "botanistes-vire-normandie",
   "version": "1.0.0",
   "description": "Interactifs Botanistes sur Musée Vire Normandie",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ldosnon/botanistes-vire-normandie.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tactile Studio",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ldosnon/botanistes-vire-normandie/issues"

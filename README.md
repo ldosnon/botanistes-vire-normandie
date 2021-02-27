@@ -6,4 +6,12 @@ Interactifs Botanistes sur Musée Vire Normandie
 2. Initier un projet Electron : 
     npm init -y
     npm i --save-dev electron
-3. Ingnorer le répertoire "node_modules" dans .gitignore
+3. Ignorer le répertoire "node_modules" dans .gitignore
+
+# modif dans la config
+
+"scripts": {
+        "start": "electron ."
+    }
+
+     "main": "main.js",

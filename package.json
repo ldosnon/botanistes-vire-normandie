@@ -1,12 +1,20 @@
 {
   "name": "botanistes-vire-normandie",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "Interactifs Botanistes sur Musée Vire Normandie",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make"
+=======
+  "description": "Interactifs Botanistes sur Musée Vire NOrmandie",
+  "main": "main.js",
+
+  "scripts": {
+    "start": "electron ."
+>>>>>>> main
   },
   "repository": {
     "type": "git",

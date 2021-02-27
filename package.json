@@ -1,24 +1,68 @@
 {
   "name": "botanistes-vire-normandie",
   "version": "1.0.0",
+<<<<<<< HEAD
+  "description": "Interactifs Botanistes sur Musée Vire Normandie",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+=======
   "description": "Interactifs Botanistes sur Musée Vire NOrmandie",
   "main": "main.js",
 
   "scripts": {
     "start": "electron ."
+>>>>>>> main
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ldosnon/botanistes-vire-normandie.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tactile Studio",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ldosnon/botanistes-vire-normandie/issues"
   },
   "homepage": "https://github.com/ldosnon/botanistes-vire-normandie#readme",
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.54",
+    "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
     "electron": "^11.3.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "botanistes_vire_normandie"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   }
 }

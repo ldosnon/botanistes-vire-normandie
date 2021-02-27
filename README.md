@@ -15,3 +15,10 @@ Interactifs Botanistes sur Musée Vire Normandie
     }
 
      "main": "main.js",
+
+# install de electron forge pour généreer les apps
+
+npx @electron-forge/cli import
+
+# généraion de l'app
+npm run make

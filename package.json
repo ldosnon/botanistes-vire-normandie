@@ -1,12 +1,14 @@
 {
   "name": "botanistes-vire-normandie",
   "version": "1.0.0",
-  "description": "Interactifs Botanistes sur Musée Vire Normandie",
+  "description": "Interactif Botanistes pour le Musée Vire Normandie",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make-mac": "npx @electron-forge/cli make --platform darwin",
+    "make-pc": "npx @electron-forge/cli make --platform win32",
+    "make-linux": "npx @electron-forge/cli make --platform linux --targets deb"
   },
   "repository": {
     "type": "git",
@@ -32,7 +34,9 @@
   },
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "./assets/icon"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
@@ -48,7 +52,9 @@
         },
         {
           "name": "@electron-forge/maker-deb",
-          "config": {}
+          "config": {
+            "icon": "./assets/icon"
+          }
         },
         {
           "name": "@electron-forge/maker-rpm",
